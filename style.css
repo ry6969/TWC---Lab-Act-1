@@ -1,0 +1,99 @@
+:root{
+    --primary-color: #D4A373;    /* main brown accent (buttons, links, highlights) */
+    --secondary-color: #FAEDCD;  /* card/section background */
+    --text-color: #4A3728;       /* soft dark brown, easier on the eyes than pure black */
+    --accent-color: #D4A373;     /* same as primary — used for hovers, borders */
+    --bg-primary: #FEFAE0;       /* page background — cream, not the punchy brown */
+    --bg-card: #FAEDCD;          /* card panels, matches secondary-color */
+    --bg-nav: #FAEDCD;           /* navbar background (Option A — cream, not solid brown) */
+    --border-color: #D4A373;     /* borders/dividers use the brown accent */
+
+    --temp-color: #EACAA5;
+
+    font-size: 12px;
+    font-family: manrope, sans-serif;
+}
+
+.manrope-regular {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.fraunces-medium {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+}
+
+.section-title{
+    font-family:fraunces, serif;
+}
+
+body{
+    background-color: var(--bg-primary);
+    margin: 0; 
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr; 
+    background-color: var(--secondary-color);
+}
+
+#logo-container{
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem 0;
+    background-color: var(--bg-primary);
+}
+
+#nav-container a{
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#nav-container a:hover{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.logo{
+    height: 100%;
+}
+
+
+@media (min-width: 1024px){
+    :root{
+        font-size: 16px;
+    }
+
+    .navbar{
+        grid-template-columns: auto 1fr; /* logo takes its natural width, nav-container takes the rest */
+        align-items: center;
+        height: 3.5rem;
+    }
+    #logo-container{
+        justify-content: flex-start;
+        padding-left: 2rem;
+    }
+    #nav-container{
+        justify-content: flex-end;
+        padding-right: 2rem;
+        background-color: var(--bg-nav);
+    }
+}
