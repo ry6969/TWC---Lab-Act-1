@@ -8,49 +8,65 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Gorditas:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar">
         <div id="logo-container">
-            <img src="/assets/Brewing Cafe Logo.png" alt="Logo" class="logo">
+            <img src="/images/Brewing Cafe Logo.png" alt="Logo" class="logo">
         </div>
 
         <div id="nav-container">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Menu</a>
-            <a href="#">Visit Us</a>
-            <a href="#">Contact</a>
+            <a href="#"><b>Home</b></a>
+            <a href="#"><b>About</b></a>
+            <a href="#"><b>Menu</b></a>
+            <a href="#"><b>Visit Us</b></a>
+            <a href="#"><b>Contact</b></a>
         </div>
     </nav>
 
     <section class="hero">
-        <h1>Brewing.Sipping.Relaxing</h1>
-        <p>Your neighborhood café for freshly brewed coffee, homemade treats, and good conversations.</p>
-        <button href="#" class="call-2-action">Explore Our Menu</button>
+        <div id="left-hero-container">
+            <img src="/images/hero-image.png" alt="Hero Image" id="hero-image">
+        </div>
+        <div id="right-hero-container">
+            <div id="hero-header">
+                <h1>Brewing.Sipping.Relaxing</h1>
+            </div>
+            <div id="hero-text">
+                <p>Your neighborhood café for freshly brewed coffee, homemade treats, and good conversations.</p>
+            </div>
+            <div id="hero-btn-container">
+                <button href="#" class="call-2-action">Explore Our Menu</button>
+            </div>  
+        </div>
     </section>
 
     <section class="about">
-        <h2 class="section-title">About Brewing Cafe</h2>
-        <p>Brewing Café was created as a cozy space where people can slow down, enjoy great coffee, and connect with others. We serve freshly brewed coffee, handcrafted drinks, pastries, and light meals prepared with quality ingredients.</p> 
-        <h4>Our Highlights</h4>
-        <ul>
-            <li><b>Freshly Brewed:</b> Every single cup is ground and brewed to order, preserving peak flavor profiles and delivering a rich, unmatched aroma.</li>
-            <li><b>Locally Sourced:</b> We partner closely with nearby artisans and local suppliers to ensure sustainable coffee beans and premium, fresh ingredients.</li>
-            <li><b>Made with Care:</b> From our handcrafted seasonal lattes to our daily light meals, everything is prepared by hand with strict attention to detail and love.</li>
-        </ul>
+        <div id="about-color-background-container">
+            <h2 class="section-title">About Brewing Cafe</h2>
+            <p class="sub-text">Brewing Café is a cozy space to slow down, connect, and enjoy great coffee, handcrafted drinks, and fresh, quality bites.</p> 
+            <div id="highlights-container">
+                <h3><b>Our Highlights</b></h3>
+                <ul>
+                    <li><b>Freshly Brewed:</b> Every cup is ground and brewed to order, locking in peak flavor and a rich, unmatched aroma.</li>
+                    <li><b>Locally Sourced:</b> We partner with local artisans and suppliers to ensure sustainable beans and fresh, premium ingredients.</li>
+                    <li><b>Made with Care:</b> From seasonal lattes to light meals, everything is crafted by hand with meticulous care and love.</li>
+                </ul>
+            </div>
+        </div>  
     </section>
 
     <section class="menu">
-        <h2>Our Menu</h2>
+        <h2 class="section-title">Our Menu</h2>
         <p>Discover our wide range of coffee, tea, and specialty drinks, along with our selection of pastries and light meals.</p>
         <div class="menu-items">
             <div class="card">
-                <img src="placeholder.jpg" alt="Card Image" class="card-image">
+                <div class="card-image-container">
+                    <img src="/images/classic-latte-picture.png" alt="Card Image" class="card-image">
+                </div>
                 <div class="card-content">
                     <h3 class="card-title">Classic Latte</h3>
                     <p class="card-text">Espresso blended with steamed milk.blended with steamed milk.</p>
@@ -60,7 +76,9 @@
             </div>
 
             <div class="card">
-                <img src="placeholder.jpg" alt="Card Image" class="card-image">
+                <div class="card-image-container">
+                    <img src="/images/caramel-macchiato-picture.png" alt="Card Image" class="card-image">
+                </div>  
                 <div class="card-content">
                     <h3 class="card-title">Caramel Macchiato</h3>
                     <p class="card-text">Espresso, steamed milk, and caramel.</p>
@@ -70,7 +88,9 @@
             </div>
 
             <div class="card">
-                <img src="placeholder.jpg" alt="Card Image" class="card-image">
+                <div class="card-image-container">
+                    <img src="/images/spanish-latte-picture.png" alt="Card Image" class="card-image">
+                </div>
                 <div class="card-content">
                     <h3 class="card-title">Spanish Latte</h3>
                     <p class="card-text">Rich espresso with sweetened milk.</p>
@@ -80,9 +100,11 @@
             </div>
 
             <div class="card">
-                <img src="placeholder.jpg" alt="Card Image" class="card-image">
+                <div class="card-image-container">
+                    <img src="/images/matcha-cream-latter-picture.png" alt="Card Image" class="card-image">
+                </div>
                 <div class="card-content">
-                    <h3 class="card-title">Matcha Cream Latter</h3>
+                    <h3 class="card-title">Matcha Cream Latte</h3>
                     <p class="card-text">Smooth matcha with creamy milk.</p>
                     <p class="card-price">₱160</p>
                     <button class="card-btn">Read More</button>
@@ -90,7 +112,9 @@
             </div>
 
             <div class="card">
-                <img src="placeholder.jpg" alt="Card Image" class="card-image">
+                <div class="card-image-container">
+                    <img src="/images/chocolate-crossaint-picture.png" alt="Card Image" class="card-image">
+                </div>
                 <div class="card-content">
                     <h3 class="card-title">Chocolate Croissant</h3>
                     <p class="card-text">Buttery pastry filled with chocolate.</p>
@@ -100,7 +124,9 @@
             </div>
 
             <div class="card">
-                <img src="placeholder.jpg" alt="Card Image" class="card-image">
+                <div class="card-image-container">
+                    <img src="/images/blueberry-cheesecake-picture.png" alt="Card Image" class="card-image">
+                </div>
                 <div class="card-content">
                     <h3 class="card-title">Blueberry Cheesecake</h3>
                     <p class="card-text">Creamy cheesecake with blueberry topping.</p>
@@ -112,12 +138,13 @@
     </section>
 
     <section class="special-offer">
-        <h2>STUDY BREAK SPECIAL</h2>
+        <h2 class="section-title">STUDY BREAK SPECIAL</h2>
         <p>Get any regular coffee + pastry for only <b>₱199</b>.</p>
         <button><b>Grab the Offer</b></button>
     </section>
 
     <section class="visit-us">
+        <h2 class="section-title">Visit Us</h2>
         <div class = left-image>
             <img src ="/asstets/coffee-shop.jpg">
         </div>
@@ -136,7 +163,7 @@
     </section>
 
     <section class="contact">
-        <h2>Contact Us!</h2>
+        <h2 class="section-title">Contact Us!</h2>
         <form action="#" method="post">
             <label for="full-name">
                 <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
@@ -180,4 +207,4 @@
         <p>&copy; 2024 Brewing Cafe. All rights reserved.</p>
     </section>
 </body>
-</html>
+</html>>
