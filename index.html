@@ -69,7 +69,7 @@
                 </div>
                 <div class="card-content">
                     <h3 class="card-title">Classic Latte</h3>
-                    <p class="card-text">Espresso blended with steamed milk.blended with steamed milk.</p>
+                    <p class="card-text">Espresso blended with steamed milk.</p>
                     <p class="card-price">₱140</p>
                     <button class="card-btn">Read More</button>
                 </div>
@@ -140,47 +140,49 @@
     <section class="special-offer">
         <h2 class="section-title">STUDY BREAK SPECIAL</h2>
         <p>Get any regular coffee + pastry for only <b>₱199</b>.</p>
-        <button><b>Grab the Offer</b></button>
+        <button class="call-2-action"><b style="color:white">Grab the Offer</b></button>
     </section>
 
     <section class="visit-us">
         <h2 class="section-title">Visit Us</h2>
-        <div class = left-image>
-            <img src ="/asstets/coffee-shop.jpg">
+        <div class="left-image">
+            <img src="/images/coffee-shop.jpg" alt="Inside Brewing Cafe">
         </div>
-        <div>
+        <div class="visit-details">
             <h4>Address:</h4>
             <p>123 University Avenue, Batangas City</p>
             <h4>Opening Hours:</h4>
             <ul>
-                <li><b>Monday - Saturday</b></li>
-                <p>7:00 AM - 9:00 PM</p>
-                <li><b>Sunday</b></li>
-                <p>8:00 AM - 6:00 PM</p>
+                <li><b>Monday - Saturday</b><span>7:00 AM - 9:00 PM</span></li>
+                <li><b>Sunday</b><span>8:00 AM - 6:00 PM</span></li>
             </ul>
-           
         </div>
     </section>
 
     <section class="contact">
         <h2 class="section-title">Contact Us!</h2>
         <form action="#" method="post">
-            <label for="full-name">
-                <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
-            </label for="email">
-                <input type="email" id="email" name="email" placeholder="Email" required>
-            </label>
-            <label>
-                <input type="text" id="subject" name="subject" placeholder="Subject" required>
-            </label>
-            <label>
-                <input type="message" id="message" name="message" placeholder="Message" required>
-            </label>
-            
+            <div class="form-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Juan Dela Cruz" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="juan@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="What's this about?" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us what's on your mind..." required></textarea>
+            </div>
+            <button type="submit" class="call-2-action">Send Message</button>
         </form>
     </section>
 
-    <section class="footer">
+    <footer class="footer">
         <div id="footer-info-container">
             <div id="left-footer">
                 <h2>Brewing Café</h2>
@@ -204,7 +206,7 @@
                 <p>Phone: (123) 456-7890</p>
             </div>
         </div>
-        <p>&copy; 2024 Brewing Cafe. All rights reserved.</p>
-    </section>
+        <p class="copyright">&copy; 2024 Brewing Cafe. All rights reserved.</p>
+    </footer>
 </body>
-</html>>
+</html>
